@@ -4,7 +4,7 @@ from filters import IsGroup, IsAdmin
 from loader import dp
 
 
-@dp.message_handler(CommandHelp())
+@dp.message_handler(CommandHelp(), IsAdmin())
 async def bot_help(message: types.Message):
     text = ("<b>Buyruqlar: ",
             "/start - Botni ishga tushirish",
