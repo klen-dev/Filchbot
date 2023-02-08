@@ -8,7 +8,9 @@ from aiogram.dispatcher.filters import Command
 from loader import dp, bot
 from aiogram.utils.exceptions import BadRequest
 from filters import IsGroup, IsAdmin
-from aiogram.dispatcher.filters import Command
+# from aiogram.dispatcher.filters import Command
+from pyrogram.types import ChatPermissions
+
 
 SUPERUSERS=['5828291838','5030589586']
 
