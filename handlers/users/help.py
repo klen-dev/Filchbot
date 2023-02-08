@@ -1,6 +1,6 @@
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandHelp
-
+from filters import IsGroup, IsAdmin
 from loader import dp
 
 
@@ -12,6 +12,9 @@ async def bot_help(message: types.Message):
             "!mute - Mute berish",
             "!unmute - Mutedan chiqarish",
             "!bayroq - Bayroq o'rnatish",
+            "!mtime - Guruhni yopaman va mafia haqida ogohlantiraman",
+            "!qtime - Guruhni yopaman va quiz haqida ogohlantiraman",
+            "!oguruh - Guruhni ochaman va bu haqida ogohlantiraman",
             "So'kinganlarga o'zim 2 soat mute beraman</b>")
     
     await message.answer("\n".join(text))
