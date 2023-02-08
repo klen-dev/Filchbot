@@ -54,6 +54,7 @@ async def mutegroup(message: types.Message):
 
 @dp.message_handler(IsGroup(), Command("ugroup", prefixes="!/"), IsAdmin())
 async def unmutegroup(message: types.Message):
+    await message.delete()
     await message.chat.set_permissions(
         # message.chat.id,
         ChatPermissions(
@@ -65,6 +66,7 @@ async def unmutegroup(message: types.Message):
     
 @dp.message_handler(IsGroup(), Command("mgroup", prefixes="!/"), IsAdmin())
 async def unmutegroup(message: types.Message):
+    await message.delete()
     await message.chat.set_permissions(
         ChatPermissions(
         can_send_messages=False,
