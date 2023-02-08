@@ -67,7 +67,8 @@ async def unmutegroup(message: types.Message):
 async def unmutegroup(message: types.Message):
     await message.chat.set_permissions(
         ChatPermissions(
-        can_send_messages=False
+        can_send_messages=False,
+        can_invite_users=True
         )
     )
     await message.answer_sticker('CAACAgIAAxkBAAIHBmPjW0GqYvmEpXiKRCEa-bXV9fGHAAIRGwACwTiZS2lcQQaGpweELgQ')
