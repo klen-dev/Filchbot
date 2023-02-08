@@ -12,7 +12,7 @@ ADMIN=5828291838
 sokinishlar = ['jalab','zaybal','chuchoq','tashshoq','joulup', 'jalla', 'seks', 'foxisha', 'dalbayob', 'sikaman', 'qotoq', 'tashoq', 'tashaq', 'dalbayob',
                'qotoq','gandon','гандон', 'qutoq','жалаб','жоулуп','жалла',   'секс', 'фохиша', 'далбаёб', 'сикаман', 'қотоқ', 'ташоқ', 'ташақ', 'далбаёб',
                'қотоқ', 'қутоқ','зайбал','заебал', 'yban','хуйет','🏳️‍🌈', '@dnx', '@pnx', '@dnx', '@pnx','yiban']
-sokinishlar2 = ['kutanak', 'nx','gey','xuyyet', 'xuet','kt','kot', 'kut','dlb','om','am', 'jlb', 'gone done', 'joul up', ' one nine sky','dnx', 'pnx','sky','кт','кот', 'кут','длб','ом','ам', 'жлб', 'гоне доне', 'жоул уп', ' оне нине скй','днх', 'пнх','скй']
+sokinishlar2 = ['жалла','жала','днх','д.н.х', 'kutanak', 'nx','gey','xuyyet', 'xuet','kt','kot', 'kut','dlb','om','am', 'jlb', 'gone done', 'joul up', ' one nine sky','dnx', 'pnx','sky','кт','кот', 'кут','длб','ом','ам', 'жлб', 'гоне доне', 'жоул уп', ' оне нине скй','днх', 'пнх','скй']
 
 for i in sokinishlar:
     @dp.message_handler(IsGroup(), Text(equals=sokinishlar2, ignore_case=True))
