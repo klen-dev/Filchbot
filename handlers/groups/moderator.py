@@ -12,12 +12,12 @@ from aiogram.dispatcher.filters import Command
 ADMIN1=5828291838
 ADMIN2=5030589586
 
-@dp.message_handler(IsGroup(), Command("jim", prefixes="!"), IsAdmin())
+@dp.message_handler(IsGroup(), Command("mute", prefixes="!"), IsAdmin())
 async def mute(message: types.Message):
     member = message.reply_to_message.from_user
     member_id = member.id
     chat_id = message.chat.id
-    command_parse = re.compile(r"(!jim) ?(\d+)? ?([\w+\D]+)?")
+    command_parse = re.compile(r"(!mute) ?(\d+)? ?([\w+\D]+)?")
     parsed = command_parse.match(message.text)
     time = parsed.group(2)
     comment = parsed.group(3)
@@ -49,7 +49,7 @@ async def mute(message: types.Message):
     await asyncio.sleep(120)
     # await answer_message_mute.delete()
 
-@dp.message_handler(IsGroup(), IsAdmin(), Command("gapir", prefixes="!"))
+@dp.message_handler(IsGroup(), IsAdmin(), Command("unmute", prefixes="!"))
 async def unmute(message: types.Message):
     member = message.reply_to_message.from_user
     member_id = member.id
@@ -68,7 +68,7 @@ async def unmute(message: types.Message):
 
     reply_message_unmute = await message.answer(f"<b>✅ Hogwarts a'zosi {message.reply_to_message.from_user.mention} guruhda yozishi mumkin!</b>")    
     await message.chat.restrict(user_id=member_id, permissions=user_allowed, until_date=0)
-    await message.delete()
+    # await message.delete()
     # await asyncio.sleep(60)
     # await reply_message_unmute.delete()
         

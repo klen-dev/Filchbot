@@ -11,7 +11,7 @@ from aiogram.utils.exceptions import BadRequest
 ADMIN=5828291838
 sokinishlar = ['jalab','zaybal','chuchoq','tashshoq','joulup', 'jalla', 'seks', 'foxisha', 'dalbayob', 'sikaman', 'qotoq', 'tashoq', 'tashaq', 'dalbayob',
                'qotoq','gandon','гандон', 'qutoq','жалаб','жоулуп','жалла',   'секс', 'фохиша', 'далбаёб', 'сикаман', 'қотоқ', 'ташоқ', 'ташақ', 'далбаёб',
-               'қотоқ', 'қутоқ','зайбал','заебал', 'yban','хуйет','🏳️‍🌈',]
+               'қотоқ', 'қутоқ','зайбал','заебал', 'yban','хуйет','🏳️‍🌈','d.n.x', 'p.n.x', '@dnx', '@pnx']
 sokinishlar2 = ['qutoqqa','amingga','kotingga','gay', 'nx','gey','xuyyet', 'xuet','kt','kot', 'kut','dlb','om','am', 'jlb', 'gone done', 'joul up', ' one nine sky','dnx', 'pnx','sky','кт','кот', 'кут','длб','ом','ам', 'жлб', 'гоне доне', 'жоул уп', ' оне нине скй','днх', 'пнх','скй']
 
 for i in sokinishlar:
