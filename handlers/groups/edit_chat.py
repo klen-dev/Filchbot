@@ -70,4 +70,4 @@ async def unmutegroup(message: types.Message):
         can_send_messages=False
         )
     )
-    await message.answer_sticker('CAACAgIAAxkBAAIHDmPja1PBviKJs1lqN3Uz2S4xxf83AALTHQACTnKQS8s0b_eUt_kpLgQ')
+    await message.answer_sticker('CAACAgIAAxkBAAIHBmPjW0GqYvmEpXiKRCEa-bXV9fGHAAIRGwACwTiZS2lcQQaGpweELgQ')
