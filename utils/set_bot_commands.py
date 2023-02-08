@@ -8,6 +8,7 @@ async def set_default_commands(dp):
             types.BotCommand("help", "Yordam"),
             types.BotCommand("qtime", "Quiz Time"),
             types.BotCommand("mtime", "Mafia Time"),
-            types.BotCommand("ogroup", "Guruhni ochish"),
+            types.BotCommand("ugroup", "Guruhni ochish"),
+            types.BotCommand("mgroup", "Guruhni yopish"),
         ]
     )

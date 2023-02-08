@@ -52,7 +52,7 @@ async def mutegroup(message: types.Message):
     await message.answer_sticker(stikerid)
     await message.answer_sticker('CAACAgIAAxkBAAIHDGPjagvgxcNNqNBGXAQZ-eOqFdy_AALeGwACs6OQS1KyVn70IA-ALgQ')
 
-@dp.message_handler(IsGroup(), Command("ogroup", prefixes="!/"), IsAdmin())
+@dp.message_handler(IsGroup(), Command("ugroup", prefixes="!/"), IsAdmin())
 async def unmutegroup(message: types.Message):
     await message.chat.set_permissions(
         # message.chat.id,
@@ -63,3 +63,11 @@ async def unmutegroup(message: types.Message):
     )
     await message.answer_sticker('CAACAgIAAxkBAAIHDmPja1PBviKJs1lqN3Uz2S4xxf83AALTHQACTnKQS8s0b_eUt_kpLgQ')
     
+@dp.message_handler(IsGroup(), Command("mgroup", prefixes="!/"), IsAdmin())
+async def unmutegroup(message: types.Message):
+    await message.chat.set_permissions(
+        ChatPermissions(
+        can_send_messages=False
+        )
+    )
+    await message.answer_sticker('CAACAgIAAxkBAAIHDmPja1PBviKJs1lqN3Uz2S4xxf83AALTHQACTnKQS8s0b_eUt_kpLgQ')
